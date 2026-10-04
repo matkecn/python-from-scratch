@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <div align="center">
 
 # 🐍 python-from-scratch
@@ -23,16 +25,16 @@
 
 | # | Section | What you find |
 | --- | --- | --- |
-| 1 | [🚀 Quick Start](#-quick-start) | Get running in four commands |
-| 2 | [📖 How a Lesson Works](#-how-a-lesson-works) | The four files in every folder |
-| 3 | [🗺️ The Course Map](#-the-course-map) | All 24 sections, in order |
-| 4 | [✨ Why It Is Built This Way](#-why-it-is-built-this-way) | The rules every lesson follows |
-| 5 | [✅ Quality Gates](#-quality-gates) | How every lesson is checked |
-| 6 | [🧰 Project Layout](#-project-layout) | The repository at a glance |
-| 7 | [🛠️ Tooling](#%EF%B8%8F-tooling) | Generator, scaffolder, verifier |
-| 8 | [🤝 Contributing](#-contributing) | Write or improve a lesson |
-| 9 | [🗺️ Roadmap](#-roadmap) | What is finished, what is next |
-| 10 | [📄 License](#-license) | MIT |
+| 1 | [🚀 Quick Start](#quick-start) | Get running in four commands |
+| 2 | [📖 How a Lesson Works](#how-a-lesson-works) | The four files in every folder |
+| 3 | [🗺️ The Course Map](#the-course-map) | All 24 sections, in order |
+| 4 | [✨ Why It Is Built This Way](#why-it-is-built-this-way) | The rules every lesson follows |
+| 5 | [✅ Quality Gates](#quality-gates) | How every lesson is checked |
+| 6 | [🧰 Project Layout](#project-layout) | The repository at a glance |
+| 7 | [🛠️ Tooling](#tooling) | Generator, scaffolder, verifier |
+| 8 | [🤝 Contributing](#contributing) | Write or improve a lesson |
+| 9 | [🗺️ Roadmap](#roadmap) | What is finished, what is next |
+| 10 | [📄 License](#license) | MIT |
 
 ---
 
@@ -329,6 +331,6 @@ it, fork it. A copy also lives at
 
 **Made with 🐍 and ☕ for everyone who ever wondered what `//` really means.**
 
-[⬆ Back to top](#-python-from-scratch)
+[⬆ Back to top](#top)
 
 </div>
