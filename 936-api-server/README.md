@@ -1,0 +1,90 @@
+# 936 · Api-server
+
+Placeholder for **Api-server**. A later phase replaces this with a full lesson.
+
+**Section** Practical Python applications · **Level** 4 of 5 · **Time** about 40 minutes · **Status** generated draft (Phase 2)
+
+## You will learn
+
+- Find the official documentation and skim it
+- Try the smallest possible example in the REPL
+- Write the one sentence that explains the idea in your own words
+
+## 1. Run the example
+
+```bash
+python 936-api-server/lesson_936_api_server.py
+```
+
+## 2. Read the code
+
+<details>
+<summary>Show <code>lesson_936_api_server.py</code></summary>
+
+```python
+"""Api-server.
+
+Placeholder for **Api-server**. A later phase replaces this with a full lesson.
+
+Run me:
+    python 936-api-server/lesson_936_api_server.py
+"""
+
+from __future__ import annotations
+
+
+def keywords() -> list[str]:
+    """Return search words that will find this topic in the documentation.
+
+    Returns:
+        Words to search for.
+    """
+    return sorted({"api server"})
+
+
+def outline() -> str:
+    """Return a tiny study outline for the topic.
+
+    Returns:
+        Three steps to work through.
+    """
+    return "\n".join(f"{step}. Api-server" for step in (1, 2, 3))
+
+
+def main() -> None:
+    """Print a small demo so the lesson is runnable."""
+    print(outline())
+    print(keywords())
+
+
+if __name__ == "__main__":
+    main()
+```
+
+</details>
+
+## 3. Run the tests
+
+```bash
+pytest 936-api-server
+```
+
+## 4. Open the notebook
+
+```bash
+jupyter notebook 936-api-server/lesson.ipynb
+```
+
+## Your turn
+
+1. Replace this lesson with a real one: add two small functions with docstrings.
+2. Add one test per function.
+
+## Read more
+
+- [language reference](https://docs.python.org/3/reference/index.html)
+- [glossary](https://docs.python.org/3/glossary.html)
+
+---
+
+[← 935-rest-service](../935-rest-service/) · [Next: 937-background-jobs →](../937-background-jobs/)
