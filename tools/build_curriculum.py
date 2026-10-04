@@ -51,8 +51,7 @@ SECTIONS: list[tuple[int, int, str, str]] = [
 TITLE_FIXES = {
     "152-lebs": "Scope labs",
     "184-else-exceptions": "try, else, finally",
-    "__init__": "__init__",
-    "__main__": "__main__",
+    "203-__init__": "__init__",
     "041-arithmetic": "Arithmetic operators",
     "045-assignment-operators": "Assignment operators",
     "082-tuple-indexing": "Tuple indexing",
@@ -118,10 +117,19 @@ def section_for(number: int) -> tuple[str, str, str]:
     raise ValueError(f"lesson {number} belongs to no section")
 
 
-def humanize(slug: str) -> str:
-    """Turn ``list-slicing`` into ``List slicing``."""
-    if slug in TITLE_FIXES:
-        return TITLE_FIXES[slug]
+def humanize(number: int, slug: str) -> str:
+    """Turn ``list-slicing`` into ``List slicing``.
+
+    Args:
+        number: The lesson number, used to look up a title fix.
+        slug: The topic slug from ``structure.a``.
+
+    Returns:
+        A title for the lesson.
+    """
+    key = f"{number:03d}-{slug}"
+    if key in TITLE_FIXES:
+        return TITLE_FIXES[key]
     words = slug.replace("_", " ").split()
     if words and words[0] in {"if", "else", "for", "not", "is", "in", "and", "or"}:
         words[0] = words[0].capitalize()
@@ -197,7 +205,7 @@ def build_module() -> str:
     lines.append("TOPICS: tuple[Topic, ...] = (")
     for number, slug in topics:
         key, _title, _blurb = section_for(number)
-        lines.append(f'    Topic(number={number}, slug="{slug}", title="{humanize(slug)}", section="{key}"),')
+        lines.append(f'    Topic(number={number}, slug="{slug}", title="{humanize(number, slug)}", section="{key}"),')
     lines.append(")")
     lines.append("")
     lines.append("")
