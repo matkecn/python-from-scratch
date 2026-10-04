@@ -1,0 +1,41 @@
+"""Multiple-return-values.
+
+`return` sends a value back to whoever called the function.
+
+Run me:
+    python 131-multiple-return-values/lesson_131_multiple_return_values.py
+"""
+
+from __future__ import annotations
+
+
+def divide(pie: int, people: int) -> tuple[int, int]:
+    """Share a pie as evenly as possible.
+
+    Args:
+        pie: How many pieces the pie has.
+        people: How many people share it.
+
+    Returns:
+        Each person's share and the pieces left over.
+
+    Raises:
+        ValueError: If there are no people.
+
+    Examples:
+        >>> divide(8, 3)
+        (2, 2)
+    """
+    if people == 0:
+        raise ValueError("need at least one person")
+    return divmod(pie, people)
+
+
+def main() -> None:
+    """Print a small demo so the lesson is runnable."""
+    share, left = divide(8, 3)
+    print(f"each gets {share}, {left} left")
+
+
+if __name__ == "__main__":
+    main()
