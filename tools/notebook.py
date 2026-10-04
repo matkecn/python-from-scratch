@@ -17,11 +17,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import curriculum
 import templates
 from lesson_model import Lesson
 
 ROOT = Path(__file__).resolve().parent.parent
-FOLDERS = sorted(path for path in ROOT.iterdir() if path.is_dir() and path.name[:3].isdigit())
+LESSONS = ROOT / curriculum.LESSONS
+FOLDERS = sorted(path for path in LESSONS.iterdir() if path.is_dir() and path.name[:3].isdigit())
 
 
 def topic_for(folder: Path) -> object:
@@ -95,7 +97,7 @@ def main(argv: list[str]) -> int:
         The process exit code.
     """
     wanted = argv[1:]
-    folders = [ROOT / name for name in wanted] if wanted else FOLDERS
+    folders = [LESSONS / name for name in wanted] if wanted else FOLDERS
     written = 0
     for folder in folders:
         if not folder.is_dir():

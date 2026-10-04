@@ -12,7 +12,7 @@ test:  ## Run every test and every docstring example
 	python3 -m pytest
 
 lesson:  ## Run the tests for one slice of the course, for example make lesson SLICE=101-120
-	python3 -m pytest -- $(SLICE)
+	python3 -m pytest lessons/$(SLICE)
 
 verify:  ## Check that every lesson is complete and runnable
 	python3 tools/verify.py
@@ -24,7 +24,7 @@ report:  ## Show how many lessons are hand written and how many are drafts
 	python3 tools/scaffold.py --report
 
 notebook:  ## List the notebooks you can open
-	@ls */lesson.ipynb | head -20
+	@ls lessons/*/lesson.ipynb | head -20
 	@echo "... and many more"
 
 lint:  ## Check style, when ruff is installed

@@ -125,7 +125,7 @@ def main() -> int:
     args = parser.parse_args()
 
     folders = sorted(
-        (path for path in ROOT.iterdir() if path.is_dir() and re.fullmatch(r"\d{3}-.+", path.name)),
+        (path for path in (ROOT / curriculum.LESSONS).iterdir() if path.is_dir() and re.fullmatch(r"\d{3}-.+", path.name)),
         key=lambda path: path.name,
     )
     print(f"folders to commit: {len(folders)}")
@@ -144,7 +144,7 @@ def main() -> int:
         if args.dry_run:
             print(f"\n{subject}\n\n{body}")
             continue
-        git("add", "--", folder.name)
+        git("add", "-A", "--", folder.name, f"{curriculum.LESSONS}/{folder.name}")
         if git("diff", "--cached", "--quiet", check=False).returncode != 0:
             git("commit", "-q", "--no-gpg-sign", "-m", subject, "-m", body)
         if index % 100 == 0 or index == len(folders):

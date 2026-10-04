@@ -8,7 +8,9 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-__all__ = ["Section", "Topic", "SECTIONS", "TOPICS", "lesson_dir"]
+__all__ = ["Section", "Topic", "SECTIONS", "TOPICS", "LESSONS", "lesson_dir"]
+
+LESSONS = 'lessons'
 
 
 @dataclass(frozen=True)
@@ -1079,5 +1081,5 @@ TOPICS: tuple[Topic, ...] = (
 
 
 def lesson_dir(number: int) -> str:
-    """Return the directory name for a lesson number."""
-    return f"{number:03d}-{TOPICS[number - 1].slug}"
+    """Return the path of a lesson folder, relative to the repository root."""
+    return f"{LESSONS}/{number:03d}-{TOPICS[number - 1].slug}"

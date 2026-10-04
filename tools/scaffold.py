@@ -157,7 +157,7 @@ def main(argv: list[str] | None = None) -> int:
         if lesson.status == STATUS_DRAFT:
             drafts += 1
         for name, text in files_for(topic, lesson).items():
-            if write(ROOT / topic.folder / name, text, force_all or topic.number in forced):
+            if write(ROOT / curriculum.lesson_dir(topic.number) / name, text, force_all or topic.number in forced):
                 made += 1
     report(topics)
     print(f"files written    : {made}")

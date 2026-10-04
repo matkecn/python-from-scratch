@@ -148,7 +148,7 @@ def main(argv: list[str] | None = None) -> int:
     checked = {"modules": 0, "notebooks": 0, "tests": 0}
 
     for topic in topics:
-        folder = ROOT / topic.folder
+        folder = ROOT / curriculum.lesson_dir(topic.number)
         module_path = folder / f"{topic.module}.py"
         test_path = folder / f"{topic.test_module}.py"
         notebook_path = folder / "lesson.ipynb"

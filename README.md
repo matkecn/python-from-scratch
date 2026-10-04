@@ -7,10 +7,10 @@
 ### A 999-lesson Python course where every lesson is runnable, tested and notebook-ready
 
 [![Python](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/)
-[![Lessons](https://img.shields.io/badge/lessons-999-00C853)](000-meta/ROADMAP.md)
-[![Tests](https://img.shields.io/badge/tests-2289%20passing-4C1)](000-meta/README.md)
-[![Notebooks](https://img.shields.io/badge/notebooks-1000-FF69B4)](000-welcome/lesson.ipynb)
-[![Sections](https://img.shields.io/badge/sections-24-8957E5)](000-meta/ROADMAP.md)
+[![Lessons](https://img.shields.io/badge/lessons-999-00C853)](lessons/000-meta/ROADMAP.md)
+[![Tests](https://img.shields.io/badge/tests-2289%20passing-4C1)](lessons/000-meta/README.md)
+[![Notebooks](https://img.shields.io/badge/notebooks-1000-FF69B4)](lessons/000-welcome/lesson.ipynb)
+[![Sections](https://img.shields.io/badge/sections-24-8957E5)](lessons/000-meta/ROADMAP.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-2EA44F)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/matkecn/python-from-scratch?label=%20last%20commit)](https://github.com/matkecn/python-from-scratch/commits/main)
 [![Stars](https://img.shields.io/github/stars/matkecn/python-from-scratch?label=%20%F0%9F%8C%99%20stars&style=social)](https://github.com/matkecn/python-from-scratch/stargazers)
@@ -57,22 +57,22 @@ python3 -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\ac
 python3 -m pip install -r requirements-dev.txt
 
 # 4. run one lesson
-python 013-variables/lesson_013_variables.py
+python lessons/013-variables/lesson_013_variables.py
 ```
 
 Prefer clicking? Open any notebook straight from the site, or locally:
 
 ```bash
-jupyter notebook 013-variables/lesson.ipynb
+jupyter notebook lessons/013-variables/lesson.ipynb
 ```
 
 New here? Read these three folders in order:
 
 | Order | Folder | What it does |
 | --- | --- | --- |
-| 1️⃣ | [`000-welcome`](000-welcome/README.md) | Your first program, one line of Python |
-| 2️⃣ | [`001-getting-started`](001-getting-started/README.md) | Install Python and learn to run a file |
-| 3️⃣ | [`020-first-program`](020-first-program/README.md) | A small quiz program that actually works |
+| 1️⃣ | [`000-welcome`](lessons/000-welcome/README.md) | Your first program, one line of Python |
+| 2️⃣ | [`001-getting-started`](lessons/001-getting-started/README.md) | Install Python and learn to run a file |
+| 3️⃣ | [`020-first-program`](lessons/020-first-program/README.md) | A small quiz program that actually works |
 
 ---
 
@@ -84,7 +84,7 @@ Every one of the 999 lessons is one folder with the same four files, so you
 always know where to look:
 
 ```text
-013-variables/
+lessons/013-variables/
 ├── README.md                       📖 the lesson, written to be read
 ├── lesson_013_variables.py         🐍 tiny runnable example
 ├── test_lesson_013_variables.py    🧪 tests that prove it works
@@ -95,16 +95,16 @@ A lesson always asks the same four things:
 
 ```bash
 # 1️⃣ run it and see what it prints
-python 013-variables/lesson_013_variables.py
+python lessons/013-variables/lesson_013_variables.py
 
 # 2️⃣ read the code (it is also inside the README)
-cat 013-variables/lesson_013_variables.py
+cat lessons/013-variables/lesson_013_variables.py
 
 # 3️⃣ run the tests
-pytest 013-variables
+pytest lessons/013-variables
 
 # 4️⃣ open the notebook and try the exercises
-jupyter notebook 013-variables/lesson.ipynb
+jupyter notebook lessons/013-variables/lesson.ipynb
 ```
 
 ### 🐍 What the code looks like
@@ -149,34 +149,34 @@ def make_greeting(name: str) -> str:
 
 | # | Lessons | Section | Level | Start here |
 | --- | --- | --- | :-: | --- |
-| 1 | 001–020 | 🟢 Getting started and first programs | 1 | [`001-getting-started`](001-getting-started/README.md) |
-| 2 | 021–050 | 🟢 Data types and conversions | 1 | [`021-integers`](021-integers/README.md) |
-| 3 | 051–070 | 🟢 Conditionals and loops | 2 | [`051-if`](051-if/README.md) |
-| 4 | 071–100 | 🟢 Lists, tuples, sets and dictionaries | 2 | [`071-lists`](071-lists/README.md) |
-| 5 | 101–120 | 🟡 Strings, encodings and regular expressions | 2 | [`101-string-indexing`](101-string-indexing/README.md) |
-| 6 | 121–160 | 🟡 Functions, arguments and scope | 2 | [`121-functions`](121-functions/README.md) |
-| 7 | 161–200 | 🟡 Modules, imports and exceptions | 3 | [`161-modules`](161-modules/README.md) |
-| 8 | 201–250 | 🟠 Object oriented programming | 3 | [`201-classes`](201-classes/README.md) |
-| 9 | 251–300 | 🟠 Iterators, generators and collections | 3 | [`251-iterables`](251-iterables/README.md) |
-| 10 | 301–350 | 🟠 Decorators, context managers, descriptors | 4 | [`301-decorators`](301-decorators/README.md) |
-| 11 | 351–400 | 🟡 Type hints, dataclasses, pattern matching | 3 | [`351-type-hints`](351-type-hints/README.md) |
-| 12 | 401–450 | 🔴 The Python data model, dunder by dunder | 4 | [`401-dunder-methods`](401-dunder-methods/README.md) |
-| 13 | 451–500 | 🟢 Files, paths and serialization | 2 | [`451-files`](451-files/README.md) |
-| 14 | 501–580 | 🟢 Standard library tour | 2 | [`501-os`](501-os/README.md) |
-| 15 | 581–600 | 🟡 Command line tools and logging | 3 | [`581-argparse`](581-argparse/README.md) |
-| 16 | 601–650 | 🔴 Networking, APIs and databases | 4 | [`601-sockets`](601-sockets/README.md) |
-| 17 | 651–700 | 🔴 Web concepts, scraping and security | 4 | [`651-web-concepts`](651-web-concepts/README.md) |
-| 18 | 701–740 | 🟡 Debugging and testing | 3 | [`701-debugging`](701-debugging/README.md) |
-| 19 | 741–800 | 🟡 Packaging, style, CI and documentation | 3 | [`741-virtual-environments`](741-virtual-environments/README.md) |
-| 20 | 801–840 | 🔴 Concurrency and asyncio | 4 | [`801-concurrency`](801-concurrency/README.md) |
-| 21 | 841–900 | 🔴 Performance, memory and CPython internals | 5 | [`841-performance`](841-performance/README.md) |
-| 22 | 901–950 | 🔴 Practical Python applications | 4 | [`901-cli-apps`](901-cli-apps/README.md) |
-| 23 | 951–999 | 🔴 Projects, challenges and mastery | 5 | [`951-beginner-project-01`](951-beginner-project-01/README.md) |
+| 1 | 001–020 | 🟢 Getting started and first programs | 1 | [`001-getting-started`](lessons/001-getting-started/README.md) |
+| 2 | 021–050 | 🟢 Data types and conversions | 1 | [`021-integers`](lessons/021-integers/README.md) |
+| 3 | 051–070 | 🟢 Conditionals and loops | 2 | [`051-if`](lessons/051-if/README.md) |
+| 4 | 071–100 | 🟢 Lists, tuples, sets and dictionaries | 2 | [`071-lists`](lessons/071-lists/README.md) |
+| 5 | 101–120 | 🟡 Strings, encodings and regular expressions | 2 | [`101-string-indexing`](lessons/101-string-indexing/README.md) |
+| 6 | 121–160 | 🟡 Functions, arguments and scope | 2 | [`121-functions`](lessons/121-functions/README.md) |
+| 7 | 161–200 | 🟡 Modules, imports and exceptions | 3 | [`161-modules`](lessons/161-modules/README.md) |
+| 8 | 201–250 | 🟠 Object oriented programming | 3 | [`201-classes`](lessons/201-classes/README.md) |
+| 9 | 251–300 | 🟠 Iterators, generators and collections | 3 | [`251-iterables`](lessons/251-iterables/README.md) |
+| 10 | 301–350 | 🟠 Decorators, context managers, descriptors | 4 | [`301-decorators`](lessons/301-decorators/README.md) |
+| 11 | 351–400 | 🟡 Type hints, dataclasses, pattern matching | 3 | [`351-type-hints`](lessons/351-type-hints/README.md) |
+| 12 | 401–450 | 🔴 The Python data model, dunder by dunder | 4 | [`401-dunder-methods`](lessons/401-dunder-methods/README.md) |
+| 13 | 451–500 | 🟢 Files, paths and serialization | 2 | [`451-files`](lessons/451-files/README.md) |
+| 14 | 501–580 | 🟢 Standard library tour | 2 | [`501-os`](lessons/501-os/README.md) |
+| 15 | 581–600 | 🟡 Command line tools and logging | 3 | [`581-argparse`](lessons/581-argparse/README.md) |
+| 16 | 601–650 | 🔴 Networking, APIs and databases | 4 | [`601-sockets`](lessons/601-sockets/README.md) |
+| 17 | 651–700 | 🔴 Web concepts, scraping and security | 4 | [`651-web-concepts`](lessons/651-web-concepts/README.md) |
+| 18 | 701–740 | 🟡 Debugging and testing | 3 | [`701-debugging`](lessons/701-debugging/README.md) |
+| 19 | 741–800 | 🟡 Packaging, style, CI and documentation | 3 | [`741-virtual-environments`](lessons/741-virtual-environments/README.md) |
+| 20 | 801–840 | 🔴 Concurrency and asyncio | 4 | [`801-concurrency`](lessons/801-concurrency/README.md) |
+| 21 | 841–900 | 🔴 Performance, memory and CPython internals | 5 | [`841-performance`](lessons/841-performance/README.md) |
+| 22 | 901–950 | 🔴 Practical Python applications | 4 | [`901-cli-apps`](lessons/901-cli-apps/README.md) |
+| 23 | 951–999 | 🔴 Projects, challenges and mastery | 5 | [`951-beginner-project-01`](lessons/951-beginner-project-01/README.md) |
 
 🟢 beginner · 🟡 early intermediate · 🟠 intermediate · 🔴 advanced
 
 The full topic list lives in [`structure.a`](structure.a) and the progress of
-each section lives in [`000-meta/ROADMAP.md`](000-meta/ROADMAP.md).
+each section lives in [`000-meta/ROADMAP.md`](lessons/000-meta/ROADMAP.md).
 
 ---
 
@@ -215,7 +215,7 @@ ruff check .                # style, when ruff is installed
 - ✅ all four files are present.
 
 There is also a test for the course itself,
-[`000-meta/test_course_integrity.py`](000-meta/test_course_integrity.py), which
+[`000-meta/test_course_integrity.py`](lessons/000-meta/test_course_integrity.py), which
 confirms there are exactly 999 numbered lessons, that folder and module names
 are unique, that no lesson module shadows the standard library, and that the
 previous and next links in every README point at folders that exist.
@@ -232,10 +232,11 @@ python-from-scratch/
 ├── 📋 structure.a             the original 999 topic plan, source of truth
 ├── ⚙️  pyproject.toml         pytest and ruff configuration
 ├── 🧪 Makefile                test, verify, scaffold, lint
-├── 📦 requirements-dev.txt   pytest, jupyterlab, ruff
-├── 🚀 000-welcome/            your first program
-├── 🧭 000-meta/               roadmap, contributing guide, licence, integrity test
-├── 📚 001-getting-started/ … 999 lesson folders …
+├── 📦 requirements-dev.txt    pytest, jupyterlab, ruff
+├── 📚 lessons/                all 999 lessons, one folder each
+│   ├── 🚀 000-welcome/          your first program
+│   ├── 🧭 000-meta/             roadmap, contributing guide, licence, integrity test
+│   ├── 001-getting-started/   …
 │   └── 999-final-python-capstone/
 └── 🛠️  tools/                  the machinery that builds the course
     ├── build_curriculum.py    structure.a → curriculum.py
@@ -285,7 +286,7 @@ New lessons, fixes and extra exercises are all welcome. The short version:
 5. **Short code.** If an example passes thirty lines, it is two lessons.
 
 Full instructions, including how to add a topic to `structure.a`, are in
-[`000-meta/CONTRIBUTING.md`](000-meta/CONTRIBUTING.md). In short:
+[`000-meta/CONTRIBUTING.md`](lessons/000-meta/CONTRIBUTING.md). In short:
 
 ```bash
 # 1. add your topic to structure.a, then
@@ -296,7 +297,7 @@ python3 tools/build_curriculum.py
 python3 tools/scaffold.py --only 13 --force 13
 
 # 4. prove it works
-pytest 013-variables && python3 tools/verify.py --only 13
+pytest lessons/013-variables && python3 tools/verify.py --only 13
 ```
 
 ---
@@ -312,7 +313,7 @@ pytest 013-variables && python3 tools/verify.py --only 13
 | 3️⃣ Exercises | Add an `exercises/` folder to finished lessons | ⏳ planned |
 | 4️⃣ Capstones | The last 49 lessons become real projects with briefs and marking schemes | ⏳ planned |
 
-See [`000-meta/ROADMAP.md`](000-meta/ROADMAP.md) for the section by section
+See [`000-meta/ROADMAP.md`](lessons/000-meta/ROADMAP.md) for the section by section
 table, and run `python3 tools/scaffold.py --report` for the live count.
 
 ---
@@ -323,7 +324,7 @@ table, and run `python3 tools/scaffold.py --report` for the live count.
 
 Released under the [MIT License](LICENSE). Use it, learn from it, teach with
 it, fork it. A copy also lives at
-[`000-meta/LICENSE`](000-meta/LICENSE).
+[`000-meta/LICENSE`](lessons/000-meta/LICENSE).
 
 ---
 
