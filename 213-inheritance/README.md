@@ -1,0 +1,89 @@
+# 213 · Inheritance
+
+Placeholder for **Inheritance**. A later phase replaces this with a full lesson.
+
+**Section** Object oriented programming · **Level** 3 of 5 · **Time** about 25 minutes · **Status** generated draft (Phase 2)
+
+## You will learn
+
+- Find the official documentation and skim it
+- Try the smallest possible example in the REPL
+- Write the one sentence that explains the idea in your own words
+
+## 1. Run the example
+
+```bash
+python 213-inheritance/lesson_213_inheritance.py
+```
+
+## 2. Read the code
+
+<details>
+<summary>Show <code>lesson_213_inheritance.py</code></summary>
+
+```python
+"""Inheritance.
+
+Placeholder for **Inheritance**. A later phase replaces this with a full lesson.
+
+Run me:
+    python 213-inheritance/lesson_213_inheritance.py
+"""
+
+from __future__ import annotations
+
+
+def keywords() -> list[str]:
+    """Return search words that will find this topic in the documentation.
+
+    Returns:
+        Words to search for.
+    """
+    return sorted({"inheritance"})
+
+
+def outline() -> str:
+    """Return a tiny study outline for the topic.
+
+    Returns:
+        Three steps to work through.
+    """
+    return "\n".join(f"{step}. Inheritance" for step in (1, 2, 3))
+
+
+def main() -> None:
+    """Print a small demo so the lesson is runnable."""
+    print(outline())
+    print(keywords())
+
+
+if __name__ == "__main__":
+    main()
+```
+
+</details>
+
+## 3. Run the tests
+
+```bash
+pytest 213-inheritance
+```
+
+## 4. Open the notebook
+
+```bash
+jupyter notebook 213-inheritance/lesson.ipynb
+```
+
+## Your turn
+
+1. Replace this lesson with a real one: add two small functions with docstrings.
+2. Add one test per function.
+
+## Read more
+
+- [official tutorial](https://docs.python.org/3/tutorial/classes.html)
+
+---
+
+[← 212-getters-setters](../212-getters-setters/) · [Next: 214-single-inheritance →](../214-single-inheritance/)
