@@ -1,0 +1,1106 @@
+Proposed 999-directory structure
+python-from-scratch/
+│
+├── 000-meta/
+│   ├── README.md
+│   ├── ROADMAP.md
+│   ├── CONTRIBUTING.md
+│   └── LICENSE
+│
+├── 001-getting-started/
+├── 002-what-is-python/
+├── 003-installation/
+├── 004-python-versions/
+├── 005-python-interpreter/
+├── 006-running-python/
+├── 007-python-repl/
+├── 008-python-files/
+├── 009-comments/
+├── 010-indentation/
+│
+├── 011-print/
+├── 012-input/
+├── 013-variables/
+├── 014-naming/
+├── 015-assignment/
+├── 016-expressions/
+├── 017-statements/
+├── 018-keywords/
+├── 019-builtins/
+├── 020-first-program/
+│
+├── 021-integers/
+├── 022-floats/
+├── 023-complex-numbers/
+├── 024-booleans/
+├── 025-none/
+├── 026-strings/
+├── 027-bytes/
+├── 028-bytearray/
+├── 029-memoryview/
+├── 030-type/
+│
+├── 031-type-conversion/
+├── 032-int-conversion/
+├── 033-float-conversion/
+├── 034-string-conversion/
+├── 035-bool-conversion/
+├── 036-number-conversion/
+├── 037-truthiness/
+├── 038-identity/
+├── 039-equality/
+├── 040-object-identity/
+│
+├── 041-arithmetic/
+├── 042-comparison/
+├── 043-logical-operators/
+├── 044-bitwise-operators/
+├── 045-assignment-operators/
+├── 046-membership-operators/
+├── 047-operator-precedence/
+├── 048-parentheses/
+├── 049-unary-operators/
+├── 050-ternary-expressions/
+│
+├── 051-if/
+├── 052-elif/
+├── 053-else/
+├── 054-nested-conditionals/
+├── 055-match/
+├── 056-case/
+├── 057-match-patterns/
+├── 058-guards/
+├── 059-conditional-expressions/
+├── 060-control-flow/
+│
+├── 061-for/
+├── 062-while/
+├── 063-break/
+├── 064-continue/
+├── 065-pass/
+├── 066-loop-else/
+├── 067-nested-loops/
+├── 068-range/
+├── 069-enumerate/
+├── 070-zip/
+│
+├── 071-lists/
+├── 072-list-indexing/
+├── 073-list-slicing/
+├── 074-list-methods/
+├── 075-list-comprehensions/
+├── 076-nested-lists/
+├── 077-list-copying/
+├── 078-list-mutation/
+├── 079-list-unpacking/
+├── 080-star-unpacking/
+│
+├── 081-tuples/
+├── 082-tuple-indexing/
+├── 083-tuple-slicing/
+├── 084-tuple-methods/
+├── 085-tuple-unpacking/
+├── 086-named-tuples/
+├── 087-sets/
+├── 088-set-methods/
+├── 089-set-operations/
+├── 090-set-comprehensions/
+│
+├── 091-dictionaries/
+├── 092-dictionary-indexing/
+├── 093-dictionary-methods/
+├── 094-dictionary-views/
+├── 095-dictionary-comprehensions/
+├── 096-dictionary-unpacking/
+├── 097-defaultdict/
+├── 098-counter/
+├── 099-ordered-dictionaries/
+├── 100-mapping-protocol/
+│
+├── 101-string-indexing/
+├── 102-string-slicing/
+├── 103-string-methods/
+├── 104-string-formatting/
+├── 105-f-strings/
+├── 106-format-specifiers/
+├── 107-raw-strings/
+├── 108-multiline-strings/
+├── 109-string-encoding/
+├── 110-unicode/
+│
+├── 111-ascii/
+├── 112-utf8/
+├── 113-utf16/
+├── 114-utf32/
+├── 115-escape-sequences/
+├── 116-regex-introduction/
+├── 117-regex-patterns/
+├── 118-regex-groups/
+├── 119-regex-replacement/
+├── 120-regex-flags/
+│
+├── 121-functions/
+├── 122-function-parameters/
+├── 123-positional-arguments/
+├── 124-keyword-arguments/
+├── 125-default-arguments/
+├── 126-positional-only/
+├── 127-keyword-only/
+├── 128-args/
+├── 129-kwargs/
+├── 130-return/
+│
+├── 131-multiple-return-values/
+├── 132-function-annotations/
+├── 133-docstrings/
+├── 134-function-scopes/
+├── 135-local-variables/
+├── 136-global-variables/
+├── 137-nonlocal/
+├── 138-recursion/
+├── 139-higher-order-functions/
+├── 140-first-class-functions/
+│
+├── 141-lambda/
+├── 142-map/
+├── 143-filter/
+├── 144-reduce/
+├── 145-sorted/
+├── 146-key-functions/
+├── 147-callable/
+├── 148-partial/
+├── 149-closures/
+├── 150-function-factories/
+│
+├── 151-scope/
+├── 152-lebs/
+├── 153-global-scope/
+├── 154-local-scope/
+├── 155-enclosing-scope/
+├── 156-builtins-scope/
+├── 157-name-resolution/
+├── 158-shadowing/
+├── 159-unbound-local/
+├── 160-scope-practice/
+│
+├── 161-modules/
+├── 162-import/
+├── 163-from-import/
+├── 164-import-as/
+├── 165-module-search/
+├── 166-sys-path/
+├── 167-packages/
+├── 168-init-py/
+├── 169-relative-imports/
+├── 170-circular-imports/
+│
+├── 171-module-attributes/
+├── 172-module-main/
+├── 173-if-main/
+├── 174-module-reloading/
+├── 175-importlib/
+├── 176-module-specs/
+├── 177-module-loaders/
+├── 178-module-cache/
+├── 179-import-hooks/
+├── 180-custom-importers/
+│
+├── 181-exceptions/
+├── 182-try/
+├── 183-except/
+├── 184-else-exceptions/
+├── 185-finally/
+├── 186-raise/
+├── 187-reraise/
+├── 188-custom-exceptions/
+├── 189-exception-chaining/
+├── 190-exception-groups/
+│
+├── 191-baseexception/
+├── 192-exception-hierarchy/
+├── 193-assert/
+├── 194-warnings/
+├── 195-warning-filters/
+├── 196-tracebacks/
+├── 197-stack-traces/
+├── 198-suppressing-exceptions/
+├── 199-error-handling-patterns/
+├── 200-exception-practice/
+
+That's only the first 200. For 999, I would continue with these major sections:
+
+201-250   Object-Oriented Python
+251-300   Advanced Functions / Iterators / Generators
+301-350   Decorators / Context Managers / Descriptors
+351-400   Dataclasses / Typing / Protocols
+401-450   Python Data Model / Dunder Methods
+451-500   Files / Paths / Serialization
+501-550   Standard Library
+551-600   Dates / Time / Math / Statistics
+601-650   OS / Sys / Subprocess / Environment
+651-700   Networking / HTTP / JSON / APIs
+701-750   Testing / Debugging / Logging
+751-800   Packaging / pip / venv / pyproject
+801-850   Concurrency / Asyncio / Threads / Processes
+851-900   Performance / Memory / Profiling / Internals
+901-950   Security / Databases / CLI / Applications
+951-999   Projects / Challenges / Capstones
+201–300 — OOP and advanced functions
+201-classes/
+202-objects/
+203-__init__/
+204-instance-attributes/
+205-class-attributes/
+206-instance-methods/
+207-class-methods/
+208-static-methods/
+209-self/
+210-class/
+211-properties/
+212-getters-setters/
+213-inheritance/
+214-single-inheritance/
+215-multiple-inheritance/
+216-mro/
+217-super/
+218-method-overriding/
+219-polymorphism/
+220-abstraction/
+221-abc/
+222-abstractmethod/
+223-interfaces/
+224-composition/
+225-aggregation/
+226-association/
+227-mixins/
+228-diamond-inheritance/
+229-object/
+230-type/
+231-isinstance/
+232-issubclass/
+233-metaclasses/
+234-metaclass-basics/
+235-class-creation/
+236-new/
+237-init/
+238-del/
+239-copy/
+240-deepcopy/
+241-shallow-copy/
+242-object-lifecycle/
+243-garbage-collection/
+244-reference-counting/
+245-weakref/
+246-slots/
+247-frozen-objects/
+248-immutable-objects/
+249-oop-design/
+250-oop-project/
+
+251-iterables/
+252-iterators/
+253-iterator-protocol/
+254-iter/
+255-next/
+256-generators/
+257-yield/
+258-yield-from/
+259-generator-expressions/
+260-generator-functions/
+261-generator-state/
+262-send/
+263-throw/
+264-close/
+265-coroutines/
+266-generator-pipelines/
+267-lazy-evaluation/
+268-infinite-iterators/
+269-itertools/
+270-itertools-chain/
+271-itertools-cycle/
+272-itertools-repeat/
+273-itertools-count/
+274-itertools-product/
+275-itertools-permutations/
+276-itertools-combinations/
+277-itertools-groupby/
+278-itertools-islice/
+279-itertools-tee/
+280-iteration-patterns/
+281-collections/
+282-deque/
+283-namedtuple/
+284-chainmap/
+285-userdict/
+286-userlist/
+287-userstring/
+288-heapq/
+289-bisect/
+290-array/
+291-enumeration/
+292-enum/
+293-intenum/
+294-flag/
+295-auto/
+296-functools/
+297-operator/
+298-more-iteration-patterns/
+299-iterator-project/
+300-generator-project/
+301–400 — Python's "power features"
+301-decorators/
+302-function-decorators/
+303-class-decorators/
+304-decorator-factories/
+305-decorator-arguments/
+306-preserving-metadata/
+307-functools-wraps/
+308-lru-cache/
+309-cache/
+310-single-dispatch/
+311-context-managers/
+312-with/
+313-contextmanager/
+314-enter/
+315-exit/
+316-async-context-managers/
+317-custom-context-managers/
+318-contextlib/
+319-contextlib-suppress/
+320-contextlib-redirect/
+321-contextlib-exitstack/
+322-descriptors/
+323-descriptor-protocol/
+324-get/
+325-set/
+326-delete/
+327-property-as-descriptor/
+328-method-descriptors/
+329-custom-descriptors/
+330-data-descriptors/
+331-non-data-descriptors/
+332-attribute-lookup/
+333-getattribute/
+334-getattr/
+335-setattr/
+336-delattr/
+337-dir/
+338-vars/
+339-call/
+340-dynamic-attributes/
+341-dynamic-classes/
+342-metaclasses/
+343-class-decorators/
+344-class-descriptors/
+345-dynamic-programming/
+346-introspection/
+347-inspection/
+348-call-signatures/
+349-signature-objects/
+350-advanced-python-project/
+
+351-type-hints/
+352-typing/
+353-type-annotations/
+354-any/
+355-union/
+356-optional/
+357-literal/
+358-final/
+359-classvar/
+360-typealias/
+361-newtype/
+362-annotated/
+363-typevars/
+364-generics/
+365-generic-classes/
+366-generic-functions/
+367-protocols/
+368-structural-subtyping/
+369-runtime-checkable/
+370-overload/
+371-type-checkers/
+372-mypy/
+373-pyright/
+374-type-narrowing/
+375-type-guards/
+376-type-inference/
+377-typing-modules/
+378-collections-abc/
+379-typing-practice/
+380-type-safe-project/
+
+381-dataclasses/
+382-dataclass-fields/
+383-default-factory/
+384-post-init/
+385-frozen-dataclasses/
+386-slots-dataclasses/
+387-dataclass-inheritance/
+388-dataclass-comparison/
+389-dataclass-serialization/
+390-dataclass-patterns/
+391-pattern-matching/
+392-sequence-patterns/
+393-mapping-patterns/
+394-class-patterns/
+395-or-patterns/
+396-as-patterns/
+397-wildcards/
+398-match-exhaustiveness/
+399-pattern-project/
+400-dataclass-project/
+401–500 — The Python data model
+401-dunder-methods/
+402-repr/
+403-str/
+404-format/
+405-bytes/
+406-bool/
+407-len/
+408-sizeof/
+409-hash/
+410-eq/
+411-ne/
+412-lt/
+413-le/
+414-gt/
+415-ge/
+416-add/
+417-sub/
+418-mul/
+419-truediv/
+420-floordiv/
+421-mod/
+422-pow/
+423-matmul/
+424-bitwise-dunders/
+425-inplace-operators/
+426-radd/
+427-rsub/
+428-rmul/
+429-comparison-protocol/
+430-container-protocol/
+431-sequence-protocol/
+432-mapping-protocol/
+433-callable-objects/
+434-context-protocol/
+435-iterator-protocol/
+436-descriptor-protocol/
+437-async-protocol/
+438-awaitable/
+439-async-iterator/
+440-async-context-manager/
+441-numeric-types/
+442-custom-numeric/
+443-custom-container/
+444-custom-mapping/
+445-custom-sequence/
+446-custom-iterator/
+447-custom-context-manager/
+448-custom-awaitable/
+449-data-model-project/
+450-python-protocol-project/
+
+451-files/
+452-open/
+453-read/
+454-write/
+455-append/
+456-binary-files/
+457-text-files/
+458-file-modes/
+459-file-encoding/
+460-file-buffering/
+461-seeking/
+462-tell/
+463-flush/
+464-close/
+465-with-open/
+466-pathlib/
+467-path-objects/
+468-path-joining/
+469-directory-operations/
+470-file-copy/
+471-file-move/
+472-file-delete/
+473-tempfiles/
+474-tempdir/
+475-glob/
+476-file-metadata/
+477-file-permissions/
+478-symbolic-links/
+479-file-project/
+480-pathlib-project/
+
+481-json/
+482-json-load/
+483-json-dump/
+484-json-serialization/
+485-json-custom-types/
+486-csv/
+487-csv-reader/
+488-csv-writer/
+489-csv-dialects/
+490-pickle/
+491-pickle-security/
+492-shelve/
+493-configparser/
+494-tomllib/
+495-xml/
+496-xml-etree/
+497-serialization-comparison/
+498-data-formats/
+499-serialization-project/
+500-file-data-project/
+501–600 — Standard library
+501-os/
+502-os-path/
+503-sys/
+504-platform/
+505-shutil/
+506-subprocess/
+507-environment-variables/
+508-exit-codes/
+509-command-execution/
+510-process-management/
+
+511-math/
+512-cmath/
+513-decimal/
+514-fractions/
+515-random/
+516-secrets/
+517-statistics/
+518-numbers/
+519-matrix-basics/
+520-numeric-project/
+
+521-datetime/
+522-date/
+523-time/
+524-timedelta/
+525-timezone/
+526-zoneinfo/
+527-strftime/
+528-strptime/
+529-timestamps/
+530-calendar/
+
+531-collections/
+532-collections-defaultdict/
+533-collections-counter/
+534-collections-deque/
+535-collections-chainmap/
+536-collections-namedtuple/
+537-collections-userdict/
+538-collections-userlist/
+539-collections-userstring/
+540-collections-abc/
+
+541-functools/
+542-itertools/
+543-operator/
+544-copy/
+545-pprint/
+546-textwrap/
+547-string/
+548-re/
+549-difflib/
+550-fnmatch/
+
+551-pathlib/
+552-glob/
+553-fileinput/
+554-tempfile/
+555-io/
+556-logging/
+557-warnings/
+558-traceback/
+559-linecache/
+560-codecs/
+
+561-hashlib/
+562-hmac/
+563-uuid/
+564-base64/
+565-binhex/
+566-binascii/
+567-zlib/
+568-gzip/
+569-bz2/
+570-lzma/
+
+571-tarfile/
+572-zipfile/
+573-archive-formats/
+574-compression/
+575-file-archives/
+576-archive-project/
+577-pprint-project/
+578-text-processing-project/
+579-standard-library-project/
+580-stdlib-review/
+
+581-argparse/
+582-getopt/
+583-shlex/
+584-cli-arguments/
+585-cli-help/
+586-cli-subcommands/
+587-cli-validation/
+588-cli-output/
+589-cli-colors/
+590-cli-project/
+
+591-logging-basics/
+592-log-levels/
+593-loggers/
+594-handlers/
+595-formatters/
+596-filters/
+597-log-files/
+598-structured-logging/
+599-logging-project/
+600-cli-and-logging-project/
+601–700 — Networking, APIs, databases
+601-sockets/
+602-tcp/
+603-udp/
+604-ip-addresses/
+605-network-clients/
+606-network-servers/
+607-http-basics/
+608-urllib/
+609-http-client/
+610-http-server/
+
+611-json-api/
+612-rest-api/
+613-http-methods/
+614-http-status-codes/
+615-request-headers/
+616-response-headers/
+617-cookies/
+618-sessions/
+619-authentication/
+620-api-project/
+
+621-sql/
+622-sqlite/
+623-sqlite-connect/
+624-sqlite-cursors/
+625-sqlite-select/
+626-sqlite-insert/
+627-sqlite-update/
+628-sqlite-delete/
+629-transactions/
+630-sqlite-project/
+
+631-database-design/
+632-primary-keys/
+633-foreign-keys/
+634-indexes/
+635-normalization/
+636-joins/
+637-aggregations/
+638-pagination/
+639-database-errors/
+640-database-project/
+
+641-email/
+642-smtp/
+643-email-messages/
+644-email-attachments/
+645-email-parsing/
+646-imap/
+647-email-project/
+648-ftp/
+649-telnet/
+650-network-project/
+
+651-web-concepts/
+652-client-server/
+653-dns/
+654-urls/
+655-http/
+656-https/
+657-tls/
+658-proxies/
+659-caching/
+660-cors/
+
+661-web-scraping/
+662-html-parsing/
+663-html-parser/
+664-url-parsing/
+665-robots/
+666-rate-limiting/
+667-pagination-scraping/
+668-data-extraction/
+669-scraping-project/
+670-api-vs-scraping/
+
+671-encryption-concepts/
+672-hashing/
+673-password-hashing/
+674-secrets/
+675-token-auth/
+676-api-keys/
+677-environment-secrets/
+678-input-validation/
+679-security-basics/
+680-security-project/
+
+681-rest-client/
+682-api-client-design/
+683-retries/
+684-timeouts/
+685-backoff/
+686-rate-limits/
+687-api-pagination/
+688-api-errors/
+689-api-testing/
+690-api-client-project/
+
+691-network-debugging/
+692-curl/
+693-http-debugging/
+694-request-logging/
+695-network-testing/
+696-socket-debugging/
+697-api-debugging/
+698-service-health/
+699-monitoring-basics/
+700-networking-capstone/
+701–800 — Testing, debugging, packaging
+701-debugging/
+702-debugger/
+703-breakpoints/
+704-stack-inspection/
+705-watch-expressions/
+706-debugger-practice/
+707-traceback-reading/
+708-error-reproduction/
+709-minimal-reproduction/
+710-debugging-project/
+
+711-unittest/
+712-test-cases/
+713-test-methods/
+714-assertions/
+715-set-up-tear-down/
+716-test-fixtures/
+717-test-suites/
+718-test-discovery/
+719-mocking/
+720-patching/
+
+721-pytest/
+722-pytest-fixtures/
+723-pytest-parametrize/
+724-pytest-markers/
+725-pytest-mocking/
+726-pytest-plugins/
+727-test-coverage/
+728-code-coverage/
+729-integration-tests/
+730-testing-project/
+
+731-doctest/
+732-property-testing/
+733-fuzz-testing/
+734-test-driven-development/
+735-behavior-driven-testing/
+736-testing-exceptions/
+737-testing-async-code/
+738-testing-databases/
+739-testing-apis/
+740-testing-project-advanced/
+
+741-virtual-environments/
+742-venv/
+743-pip/
+744-pip-install/
+745-pip-uninstall/
+746-pip-freeze/
+747-requirements-txt/
+748-dependencies/
+749-dependency-conflicts/
+750-dependency-management/
+
+751-pyproject/
+752-build-systems/
+753-package-metadata/
+754-packaging/
+755-wheel/
+756-sdist/
+757-building-packages/
+758-publishing-packages/
+759-package-index/
+760-package-project/
+
+761-poetry/
+762-uv/
+763-pip-tools/
+764-conda/
+765-environment-management/
+766-lock-files/
+767-dependency-resolution/
+768-package-security/
+769-package-project-advanced/
+770-packaging-capstone/
+
+771-code-style/
+772-pep8/
+773-ruff/
+774-black/
+775-isort/
+776-flake8/
+777-linting/
+778-formatting/
+779-pre-commit/
+780-code-quality/
+
+781-git-basics/
+782-git-branches/
+783-git-commits/
+784-git-ignore/
+785-github/
+786-github-actions/
+787-ci/
+788-cd/
+789-ci-testing/
+790-ci-project/
+
+791-documentation/
+792-readme/
+793-docstrings/
+794-sphinx/
+795-mkdocs/
+796-api-documentation/
+797-documentation-project/
+798-changelog/
+799-versioning/
+800-open-source-project/
+801–900 — Concurrency, async, performance, internals
+801-concurrency/
+802-processes/
+803-threads/
+804-threading/
+805-thread-pool/
+806-thread-safety/
+807-locks/
+808-rlocks/
+809-semaphores/
+810-events/
+
+811-condition/
+812-barrier/
+813-queue/
+814-producer-consumer/
+815-threading-project/
+816-multiprocessing/
+817-process-pool/
+818-shared-memory/
+819-ipc/
+820-multiprocessing-project/
+
+821-asyncio/
+822-event-loop/
+823-coroutines/
+824-async-def/
+825-await/
+826-async-tasks/
+827-create-task/
+828-gather/
+829-sleep/
+830-cancel-tasks/
+
+831-async-generators/
+832-async-iterators/
+833-async-context-managers/
+834-asyncio-queues/
+835-asyncio-locks/
+836-asyncio-events/
+837-asyncio-semaphores/
+838-asyncio-streams/
+839-asyncio-networking/
+840-asyncio-project/
+
+841-performance/
+842-timeit/
+843-profiling/
+844-cprofile/
+845-profile/
+846-pstats/
+847-line-profiler/
+848-memory-profiling/
+849-tracemalloc/
+850-performance-project/
+
+851-memory-model/
+852-object-references/
+853-reference-counting/
+854-garbage-collector/
+855-cyclic-garbage/
+856-memory-layout/
+857-interning/
+858-small-integers/
+859-string-interning/
+860-memory-project/
+
+861-cpython/
+862-python-bytecode/
+863-bytecode/
+864-dis/
+865-code-objects/
+866-frame-objects/
+867-function-objects/
+868-module-objects/
+869-ast/
+870-ast-module/
+
+871-ast-parsing/
+872-ast-transformations/
+873-ast-generation/
+874-compile/
+875-exec/
+876-eval/
+877-dynamic-code/
+878-code-generation/
+879-metaprogramming/
+880-metaprogramming-project/
+
+881-gil/
+882-python-implementations/
+883-cpython-vs-pypy/
+884-jython/
+885-ironpython/
+886-python-version-history/
+887-language-evolution/
+888-peps/
+889-pep-process/
+890-python-internals-project/
+
+891-interpreter/
+892-bytecode-execution/
+893-import-internals/
+894-garbage-collection-internals/
+895-memory-internals/
+896-thread-internals/
+897-async-internals/
+898-performance-internals/
+899-cpython-source/
+900-python-internals-capstone/
+901–950 — Practical Python
+901-cli-apps/
+902-cli-calculator/
+903-cli-todo/
+904-cli-notes/
+905-cli-password-generator/
+906-cli-file-manager/
+907-cli-weather/
+908-cli-unit-converter/
+909-cli-expense-tracker/
+910-cli-log-analyzer/
+
+911-data-processing/
+912-csv-analyzer/
+913-json-analyzer/
+914-log-parser/
+915-text-analyzer/
+916-file-organizer/
+917-duplicate-finder/
+918-batch-renamer/
+919-directory-statistics/
+920-data-processing-project/
+
+921-web-app-concepts/
+922-wsgi/
+923-asgi/
+924-web-framework-concepts/
+925-flask-basics/
+926-fastapi-basics/
+927-django-concepts/
+928-routing/
+929-templates/
+930-web-project/
+
+931-database-app/
+932-crud/
+933-authentication-app/
+934-user-management/
+935-rest-service/
+936-api-server/
+937-background-jobs/
+938-caching/
+939-websocket/
+940-fullstack-project/
+
+941-automation/
+942-file-automation/
+943-email-automation/
+944-web-automation/
+945-report-generation/
+946-scheduled-scripts/
+947-system-monitor/
+948-backup-tool/
+949-automation-project/
+950-automation-capstone/
+951–999 — Projects & mastery
+951-beginner-project-01/
+952-beginner-project-02/
+953-beginner-project-03/
+954-beginner-project-04/
+955-beginner-project-05/
+
+956-intermediate-project-01/
+957-intermediate-project-02/
+958-intermediate-project-03/
+959-intermediate-project-04/
+960-intermediate-project-05/
+
+961-advanced-project-01/
+962-advanced-project-02/
+963-advanced-project-03/
+964-advanced-project-04/
+965-advanced-project-05/
+
+966-algorithm-challenges/
+967-data-structure-challenges/
+968-string-challenges/
+969-list-challenges/
+970-dictionary-challenges/
+971-recursion-challenges/
+972-oop-challenges/
+973-functional-challenges/
+974-iterator-challenges/
+975-generator-challenges/
+
+976-file-challenges/
+977-api-challenges/
+978-database-challenges/
+979-concurrency-challenges/
+980-async-challenges/
+981-testing-challenges/
+982-debugging-challenges/
+983-performance-challenges/
+984-typing-challenges/
+985-metaprogramming-challenges/
+
+986-code-review-challenges/
+987-refactoring-challenges/
+988-security-challenges/
+989-packaging-challenges/
+990-open-source-challenges/
+
+991-build-your-own-python-tool/
+992-build-your-own-cli/
+993-build-your-own-web-api/
+994-build-your-own-database-layer/
+995-build-your-own-test-framework/
+996-build-your-own-package/
+997-build-your-own-orm/
+998-build-your-own-interpreter/
+999-final-python-capstone/
