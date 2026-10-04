@@ -1,0 +1,13 @@
+"""Tests for Regex-flags."""
+
+from lesson_120_regex_flags import find_digits, is_valid_pin
+
+
+def test_finds_digits() -> None:
+    """The promise of lesson 'Regex-flags' still holds."""
+    assert find_digits("a1 b22") == ["1", "22"]
+
+
+def test_checks_pin() -> None:
+    """The promise of lesson 'Regex-flags' still holds."""
+    assert is_valid_pin("1234") is True
