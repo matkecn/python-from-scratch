@@ -7,7 +7,7 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "tools"))
 
 import curriculum  # noqa: E402
@@ -25,7 +25,7 @@ def lesson_folder(topic: curriculum.Topic) -> Path:
     Returns:
         The path of the lesson folder.
     """
-    return ROOT / topic.folder
+    return ROOT / curriculum.lesson_dir(topic.number)
 
 
 def test_there_are_999_lessons() -> None:

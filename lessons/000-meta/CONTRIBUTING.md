@@ -32,7 +32,7 @@ LESSONS: dict[int, Lesson] = {
         source='''"""Variables.
 
 Run me:
-    python 013-variables/lesson_013_variables.py
+    python lessons/013-variables/lesson_013_variables.py
 """
 ...
 ''',

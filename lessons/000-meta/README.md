@@ -46,7 +46,7 @@ python3 tools/verify.py
 `test_course_integrity.py` checks the promises this page makes. Run it with:
 
 ```bash
-pytest 000-meta
+pytest lessons/000-meta
 ```
 
 It confirms that there are 999 numbered lessons, that every folder name and
